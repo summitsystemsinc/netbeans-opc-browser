@@ -69,6 +69,7 @@
     <modules>
         <module>branding</module>
         <module>application</module>
+        <module>modules</module>
     </modules>
 
     <properties>
