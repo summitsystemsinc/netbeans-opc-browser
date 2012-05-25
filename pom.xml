@@ -8,6 +8,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:summitsystemsinc/netbeans-opc-browser.git</developerConnection>
+        <connection>scm:git://github.com/summitsystemsinc/netbeans-opc-browser.git</connection>
+        <url>https://github.com/summitsystemsinc/netbeans-opc-browser</url>
+    </scm>
+
     <name>netbeans-opc-browser - NB App Parent</name>
 
     <repositories>
@@ -61,6 +67,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>2.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.github</groupId>
+                    <artifactId>site-maven-plugin</artifactId>
+                    <version>0.6</version>
                 </plugin>
             </plugins>
         </pluginManagement>

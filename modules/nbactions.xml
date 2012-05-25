@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-autoupdate</actionName>
+            <displayName>autoupdate</displayName>
+            <goals>
+                <goal>install</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>deployment</activatedProfile>
+            </activatedProfiles>
+        </action>
+    </actions>
