@@ -9,15 +9,15 @@ import java.awt.image.BufferedImage;
 import org.openide.nodes.AbstractNode;
 import org.openide.util.ImageUtilities;
 import org.openide.util.Lookup;
-
 /**
  *
  * @author justin
  */
 public class ServersNode extends AbstractNode{
 
-    public static final Image ICON = ImageUtilities.loadImage("com/summit/opc/nb/serverIcon.png").getScaledInstance(24, 24, BufferedImage.SCALE_SMOOTH);
+    public static final Image ICON = ImageUtilities.loadImage("com/summit/opc/nb/serverIcon.png").getScaledInstance(16, 16, BufferedImage.SCALE_SMOOTH);
     
+        
     public ServersNode(ServersChildren children) {
         super(children);
     }
@@ -28,7 +28,7 @@ public class ServersNode extends AbstractNode{
 
     @Override
     public String getName() {
-        return "Servers";
+        return "OPC Servers";
     }
 
     @Override

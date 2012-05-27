@@ -31,7 +31,7 @@ public class ServerChildren extends Children.Keys<Branch> {
     @Override
     protected Node[] createNodes(Branch key) {
         key.setName("Root");
-        return new Node[]{new BranchNode(key)};
+        return new Node[]{new BranchNode(key, server)};
     }
 
     @Override
@@ -59,6 +59,5 @@ public class ServerChildren extends Children.Keys<Branch> {
         };
 
         sw.execute();
-
     }
 }

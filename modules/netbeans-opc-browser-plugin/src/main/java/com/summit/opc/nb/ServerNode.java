@@ -8,6 +8,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import org.openide.nodes.AbstractNode;
 import org.openide.util.ImageUtilities;
+import org.openide.util.lookup.Lookups;
 import org.openscada.opc.lib.common.ConnectionInformation;
 
 /**
@@ -20,7 +21,7 @@ public class ServerNode extends AbstractNode {
     public static final Image ICON = ImageUtilities.loadImage("com/summit/opc/nb/singleServerIcon.png").getScaledInstance(24, 24, BufferedImage.SCALE_SMOOTH);
 
     public ServerNode(ConnectionInformation connInfo) {
-        super(new ServerChildren(connInfo));
+        super(new ServerChildren(connInfo),Lookups.singleton(connInfo));
 
         this.connInfo = connInfo;
     }

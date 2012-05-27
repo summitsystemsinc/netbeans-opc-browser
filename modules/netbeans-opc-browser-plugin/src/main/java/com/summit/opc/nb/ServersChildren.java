@@ -14,14 +14,14 @@ import org.openscada.opc.lib.common.ConnectionInformation;
  *
  * @author justin
  */
-public class ServersChildren extends Children.Keys {
+public class ServersChildren extends Children.Keys<ConnectionInformation> {
 
     Collection<ConnectionInformation> serverKeys = new HashSet<ConnectionInformation>();
     
     
     @Override
-    protected Node[] createNodes(Object t) {
-        return new Node[] {new ServerNode((ConnectionInformation) t)};
+    protected Node[] createNodes(ConnectionInformation t) {
+        return new Node[] {new ServerNode(t)};
     }
 
     

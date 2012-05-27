@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import org.openide.nodes.AbstractNode;
 import org.openide.nodes.Children;
 import org.openide.nodes.Node;
+import org.openscada.opc.lib.da.Server;
 import org.openscada.opc.lib.da.browser.Branch;
 import org.openscada.opc.lib.da.browser.Leaf;
 
@@ -19,16 +20,18 @@ import org.openscada.opc.lib.da.browser.Leaf;
 public class BranchChildren extends Children.Keys{
 
     Branch parent;
+    Server server;
     
-    public BranchChildren(Branch parent) {
+    public BranchChildren(Branch parent, Server server) {
         this.parent = parent;
+        this.server = server;
     }    
     
     @Override
     protected Node[] createNodes(Object key) {
         if(key instanceof Branch){
             Branch b = (Branch) key;
-            return new Node[]{new BranchNode(b)};
+            return new Node[]{new BranchNode(b, server)};
         }else if(key instanceof Leaf){
             Leaf l = (Leaf) key;
             return new Node[]{new LeafNode(l)};
