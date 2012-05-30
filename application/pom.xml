@@ -113,7 +113,18 @@
                 <artifactId>maven-repository-plugin</artifactId>
                 <version>2.3.1</version>
             </plugin>
-            
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>downloads-maven-plugin</artifactId>
+                <version>0.5</version>
+                <configuration>
+                    <description>${project.version} Standalone OPC Browser</description>
+                    <override>true</override>
+                    <includes>
+                        <include>*.zip</include>
+                    </includes>
+                </configuration>
+            </plugin>
             <!-- To run NbModuleSuite in integration-test phase:
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
