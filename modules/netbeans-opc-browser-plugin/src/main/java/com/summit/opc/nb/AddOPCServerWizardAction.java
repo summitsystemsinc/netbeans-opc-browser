@@ -16,9 +16,6 @@ import org.openide.WizardDescriptor;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.awt.ActionRegistration;
-import org.openide.explorer.ExplorerManager;
-import org.openide.util.Lookup;
-import org.openide.util.lookup.Lookups;
 import org.openscada.opc.dcom.list.ClassDetails;
 import org.openscada.opc.lib.common.ConnectionInformation;
 
@@ -26,7 +23,7 @@ import org.openscada.opc.lib.common.ConnectionInformation;
 // your code. You can move the code below wherever you need, or register an action:
 @ActionID(category = "Window", id = "com.summit.opc.nb.AddOPCServerWizardAction")
 @ActionRegistration(displayName = "Add OPC Server Wizard")
-@ActionReference(path = "Menu/OPC", position = 110)
+@ActionReference(path = "Menu/OPC", position = 120)
 public final class AddOPCServerWizardAction implements ActionListener {
 
     public String host = "localhost";

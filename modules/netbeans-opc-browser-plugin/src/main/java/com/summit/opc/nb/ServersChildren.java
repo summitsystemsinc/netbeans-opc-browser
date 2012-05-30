@@ -16,17 +16,30 @@ import org.openscada.opc.lib.common.ConnectionInformation;
  */
 public class ServersChildren extends Children.Keys<ConnectionInformation> {
 
-    Collection<ConnectionInformation> serverKeys = new HashSet<ConnectionInformation>();
-    
-    
+    private Collection<ConnectionInformation> connections = new HashSet<ConnectionInformation>();
+
     @Override
     protected Node[] createNodes(ConnectionInformation t) {
-        return new Node[] {new ServerNode(t)};
+        return new Node[]{new ServerNode(t)};
     }
 
-    
-    public void addConnection(ConnectionInformation server){
-        serverKeys.add(server);
-        setKeys(serverKeys);
+    public void addConnection(ConnectionInformation server) {
+        getConnections().add(server);
+        setKeys(getConnections());
+    }
+
+    /**
+     * @return the connections
+     */
+    public Collection<ConnectionInformation> getConnections() {
+        return connections;
+    }
+
+    /**
+     * @param connections the connections to set
+     */
+    public void setConnections(Collection<ConnectionInformation> connections) {
+        this.connections = connections;
+        setKeys(connections);
     }
 }

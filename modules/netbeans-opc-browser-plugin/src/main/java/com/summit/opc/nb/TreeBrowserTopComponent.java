@@ -5,7 +5,6 @@
 package com.summit.opc.nb;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
@@ -31,8 +30,8 @@ persistenceType = TopComponent.PERSISTENCE_ALWAYS)
 @TopComponent.OpenActionRegistration(displayName = "#CTL_TreeBrowserAction",
 preferredID = "TreeBrowserTopComponent")
 @Messages({
-    "CTL_TreeBrowserAction=TreeBrowser",
-    "CTL_TreeBrowserTopComponent=TreeBrowser Window",
+    "CTL_TreeBrowserAction=OPC Tree Browser",
+    "CTL_TreeBrowserTopComponent=OPC Tree Browser",
     "HINT_TreeBrowserTopComponent=OPC Tree Browser"
 })
 public final class TreeBrowserTopComponent extends TopComponent implements ExplorerManager.Provider {
