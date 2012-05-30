@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!DOCTYPE module_updates PUBLIC "-//NetBeans//DTD Autoupdate Catalog 2.5//EN" "http://www.netbeans.org/dtds/autoupdate-catalog-2_5.dtd">
-<module_updates timestamp="24/18/21/24/05/2012">
+<module_updates timestamp="10/41/21/30/05/2012">
 
 
 <module autoload="true" codenamebase="org.openide.actions" distribution="org-openide-actions-RELEASE712.nbm" downloadsize="126632" homepage="http://www.netbeans.org/" license="8B813426" moduleauthor="" needsrestart="false" releasedate="2012/04/10" targetcluster="platform">
@@ -61,6 +61,11 @@
 
 <module autoload="true" codenamebase="org.netbeans.core.execution" distribution="org-netbeans-core-execution-RELEASE712.nbm" downloadsize="113028" homepage="http://www.netbeans.org/" license="8B813426" moduleauthor="" needsrestart="false" releasedate="2012/04/10" targetcluster="platform">
     <manifest AutoUpdate-Essential-Module="true" AutoUpdate-Show-In-Client="false" OpenIDE-Module="org.netbeans.core.execution/1" OpenIDE-Module-Display-Category="Infrastructure" OpenIDE-Module-Implementation-Version="201204101705" OpenIDE-Module-Java-Dependencies="Java &gt; 1.6" OpenIDE-Module-Long-Description="Adds support for execution into the platform. Contains classes which implement the execution part of APIs and corresponding GUI." OpenIDE-Module-Module-Dependencies="org.netbeans.api.progress/1 &gt; 1.18, org.netbeans.bootstrap/1, org.netbeans.core/2 &gt; 3.18, org.netbeans.core.startup/1 &gt; 1.22, org.openide.actions &gt; 6.2, org.openide.awt &gt; 6.2, org.openide.dialogs &gt; 6.2, org.openide.execution &gt; 1.2, org.openide.explorer &gt; 6.8, org.openide.io &gt; 1.11, org.openide.modules &gt; 6.2, org.openide.nodes &gt; 6.2, org.openide.util &gt; 8.0, org.openide.util.lookup &gt; 8.0" OpenIDE-Module-Name="Core - Execution" OpenIDE-Module-Provides="org.openide.execution.ExecutionEngine" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Implementation of the Execution engine." OpenIDE-Module-Specification-Version="1.26.1"/>
+    
+</module>
+
+<module codenamebase="org.netbeans.core.ide" distribution="org-netbeans-core-ide-RELEASE712.nbm" downloadsize="89771" homepage="http://www.netbeans.org/" license="8B813426" moduleauthor="" needsrestart="false" releasedate="2012/04/10" targetcluster="ide">
+    <manifest AutoUpdate-Show-In-Client="false" OpenIDE-Module="org.netbeans.core.ide/1" OpenIDE-Module-Display-Category="Infrastructure" OpenIDE-Module-Implementation-Version="201204101705" OpenIDE-Module-Java-Dependencies="Java &gt; 1.6" OpenIDE-Module-Long-Description="Adds classes and resources useful for building IDEs on top of the platform. Includes the Services tab." OpenIDE-Module-Module-Dependencies="org.netbeans.core.ui/1, org.openide.awt &gt; 7.29, org.openide.explorer &gt; 6.18, org.openide.filesystems &gt; 7.21, org.openide.nodes &gt; 7.9, org.openide.util &gt; 8.0, org.openide.util.lookup &gt; 8.0, org.openide.windows &gt; 6.37" OpenIDE-Module-Name="Core - IDE" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Makes the IDE from the platform." OpenIDE-Module-Specification-Version="1.26.1"/>
     
 </module>
 
@@ -199,8 +204,8 @@
     
 </module>
 
-<module codenamebase="com.summit.netbeans.opc.browser.plugin" distribution="netbeans-opc-browser-plugin-1.0-SNAPSHOT.nbm" downloadsize="3843" license="F5017332" needsrestart="false" releasedate="2012/05/24" targetcluster="netbeans_opc_browser">
-    <manifest OpenIDE-Module="com.summit.netbeans.opc.browser.plugin" OpenIDE-Module-Display-Category="OPC" OpenIDE-Module-Implementation-Version="1.0-20120524" OpenIDE-Module-Long-Description="Browser for OPC Servers" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.11.1" OpenIDE-Module-Name="Netbeans OPC Browser" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="OPC Browser" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="com.summit.netbeans.opc.browser.plugin" distribution="netbeans-opc-browser-plugin-1.0-SNAPSHOT.nbm" downloadsize="1591772" license="F5017332" needsrestart="false" releasedate="2012/05/30" targetcluster="netbeans_opc_browser">
+    <manifest OpenIDE-Module="com.summit.netbeans.opc.browser.plugin" OpenIDE-Module-Display-Category="OPC" OpenIDE-Module-Implementation-Version="1.0-20120530" OpenIDE-Module-Long-Description="Browser for OPC Servers" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.11.1, org.openide.windows &gt; 6.48.2, org.openide.util &gt; 8.19.2, org.openide.util.lookup &gt; 8.11.1, org.openide.awt &gt; 7.39.1, org.openide.explorer &gt; 6.40.1, org.netbeans.modules.settings/1 &gt; 1.33.1, org.openide.nodes &gt; 7.25.1, org.openide.dialogs &gt; 7.23.1, org.netbeans.core.ide/1 &gt; 1.26.1, org.openide.modules &gt; 7.27.1" OpenIDE-Module-Name="Netbeans OPC Browser" OpenIDE-Module-Requires="org.openide.windows.WindowManager" OpenIDE-Module-Short-Description="OPC Browser" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
