@@ -27,6 +27,13 @@
             <name>NetBeans</name>
             <url>http://bits.netbeans.org/maven2/</url>
         </repository>
+        <repository>
+            <id>nb_opc_gh</id>
+            <releases/>
+            <snapshots/>
+            <name>OPC Browser GitHub</name>
+            <url>http://summitsystemsinc.github.com/netbeans-opc-browser/repo/</url>
+        </repository>
     </repositories>
 
     <dependencyManagement>
