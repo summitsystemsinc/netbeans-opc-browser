@@ -164,7 +164,7 @@ public final class AddOPCServerVisualPanel2 extends JPanel {
     private static class ClassDetailsComboBoxRendered extends DefaultListCellRenderer{
 
         @Override
-        public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+        public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
             ClassDetails classDetails = (ClassDetails)value;
             return super.getListCellRendererComponent(list, classDetails.getDescription(), index, isSelected, cellHasFocus);
         }
