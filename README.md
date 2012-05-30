@@ -15,6 +15,6 @@ Maven repo (untested as of yet...):
             <url>http://summitsystemsinc.github.com/netbeans-opc-browser/repo/</url>
     </repository>
 
-Netbeans update site:
+Netbeans update site (worked for me...):
 
     http://summitsystemsinc.github.com/netbeans-opc-browser/netbeans_site/updates.xml
