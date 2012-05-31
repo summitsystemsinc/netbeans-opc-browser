@@ -21,7 +21,7 @@ public class ServerNode extends AbstractNode {
     public static final Image ICON = ImageUtilities.loadImage("com/summit/opc/nb/singleServerIcon.png").getScaledInstance(24, 24, BufferedImage.SCALE_SMOOTH);
 
     public ServerNode(ConnectionInformation connInfo) {
-        super(new ServerChildren(connInfo),Lookups.singleton(connInfo));
+        super(new ServerChildren(connInfo), Lookups.singleton(connInfo));
 
         this.connInfo = connInfo;
     }

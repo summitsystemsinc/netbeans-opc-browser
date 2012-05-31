@@ -28,7 +28,7 @@ public class LeafNode extends AbstractNode{
     }
 
     @Override
-    public String getHtmlDisplayName() {
+    public String getHtmlDisplayName() {        
         return "<html>" + leaf.getName() + "</html>";
     }
 
