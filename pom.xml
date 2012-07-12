@@ -27,12 +27,17 @@
             <name>NetBeans</name>
             <url>http://bits.netbeans.org/maven2/</url>
         </repository>
+        <!-- Summit built repository of the latest* utgard libraries -->
         <repository>
-            <id>nb_opc_gh</id>
-            <releases/>
-            <snapshots/>
-            <name>OPC Browser GitHub</name>
-            <url>http://summitsystemsinc.github.com/netbeans-opc-browser/repo/</url>
+            <id>summitRepo-public-releases</id>
+            <name>summitRepo-releases</name>
+            <url>http://devel.summitsystemsinc.net/mvnrep/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
